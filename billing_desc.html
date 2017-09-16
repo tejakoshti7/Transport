@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Billing Type</title>
+		<!-- meta -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<!-- links -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"/>
+	</head>
+	<body>
+		<div id="bill_type_desc"  style="height:80%;width:60%;margin:0px auto;margin-top:5%;">
+			<div class="modal-header modal-navigation bg-primary">
+			Billing Type Description
+			</div>
+			<div class="bar  box-shadow ">
+				<div class=" btn-group ">
+					
+					<button ng-click="vm.save()"  class="btn btn-default"><i class="glyphicon glyphicon-floppy-disk"></i></button>
+					<button ng-click="vm.remove()" class="btn btn-default"><i class="fa fa-trash"></i></button>
+					<button ng-click="$close()" class="btn btn-default"><i class="fa fa-undo"></i></button>
+					<button ng-click="$close()" class="btn btn-default"><i class="glyphicon glyphicon-remove-sign"></i></button>
+				</div>
+			</div><br>
+			<div class="modal-body" style="height:400px;">
+				<form class="form-horizontal" role="form" name="addbilldescform">
+					<div class="form-group">
+						<label for="title" class="col-sm-3 control-label">Billing Type Name</label>
+						<div class="col-sm-8">
+							<input type="text"  class="form-control input-sm" id="title" placeholder="Billing Type Name" required autofocus/>
+						</div>
+					</div>
+			<div class="form-group">
+						<label for="title" class="col-sm-3 control-label">Billing Type Description</label>
+						<div class="col-sm-8">
+							<input type="text"  class="form-control input-sm" id="descp" placeholder="Billing Type Description" required />
+						</div>
+					</div>
+					
+		
+			</form>
+		</div>
+		<div class="modal-footer box-shadow bg-primary">
+		</div>
+	</div>
+	<script type="text/javascript" src="Scripts/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="Scripts/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
